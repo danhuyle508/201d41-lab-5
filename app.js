@@ -82,6 +82,7 @@ function sumArray(sumArr) { //eslint-disable-line
   var sumOfArray = 0;
   for(var i =0; i < sumArr.length; i++){
     sumOfArray = sum(sumOfArray,sumArr[i])[0];
+
     console.log('the sum of the array', sumOfArray)
   }
   return [sumOfArray, sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + sumOfArray + " is their sum."]
