@@ -50,7 +50,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var theSumOfThreeNumbers = sum(sum(a,b),c);
+  var theSumOfThreeNumbers = sum(sum(a,b),c)
   var theProductOfThreeNumbers = multiply(sum(a,b),c);
   var array = [theSumOfThreeNumbers,theProductOfThreeNumbers,'The sum of ' + a + ',' + b + ' and ' + c + ' is ' + theSumOfThreeNumbers + '.','The product of ' + a + ',' + b + ' and ' + c + ' is ' + theProductOfThreeNumbers + '.']
 }
