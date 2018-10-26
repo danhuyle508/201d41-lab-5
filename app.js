@@ -9,7 +9,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-  return [a + b, 'The sum of ' + a + ' and ' + b + ' is ' + (a + b) + '.'];
+  var answer =a + b;
+  return ['The sum of ' + a + ' and ' + b + ' is ' + answer + '.'];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -27,7 +28,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  return [a * b, 'The product of ' + a + ' and ' + b + ' is ' + (a + b) + '.']
+  var answer = a * b;
+  return ['The product of ' + a + ' and ' + b + ' is ' + answer + '.']
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -48,7 +50,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  var theSumOfThreeNumbers = sum(sum(a,b),c);
+  var theProductOfThreeNumbers = multiply(sum(a,b),c);
+  var array = [theSumOfThreeNumbers,theProductOfThreeNumbers,'The sum of ' + a + ',' + b + ' and ' + c + ' is ' + theSumOfThreeNumbers + '.','The product of ' + a + ',' + b + ' and ' + c + ' is ' + theProductOfThreeNumbers + '.']
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
